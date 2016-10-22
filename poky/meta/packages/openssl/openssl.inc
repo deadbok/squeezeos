@@ -4,6 +4,7 @@ LICENSE = "openssl"
 SECTION = "libs/network"
 
 SRC_URI = "http://www.openssl.org/source/openssl-${PV}.tar.gz"
+SRC_URI += "file://openssl-add-deprecated-and-unmaintained-find.pl-from-perl-5.14-to-fix-perlpath.pl.patch;patch=1 "
 S = "${WORKDIR}/openssl-${PV}"
 
 AR_append = " r"
