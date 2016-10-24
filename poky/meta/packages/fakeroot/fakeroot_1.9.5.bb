@@ -9,6 +9,8 @@ PR = "r2"
 
 SRC_URI = "${DEBIAN_MIRROR}/main/f/fakeroot/fakeroot_${PV}.tar.gz \
            file://configure-libtool.patch;patch=1"
+           
+SRC_URI[md5sum] = "1c2a44ac3b87a68c12f73b3200e1cb7b"
 	    
 inherit autotools_stage
 
